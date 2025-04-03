@@ -1,6 +1,6 @@
 /* style.css */
 body {
-    max-width: 600px;
+    max-width: 400px;
     width: 100%;
     margin: 0 auto; /* horizontal centering */
     padding: 2rem 1rem;
@@ -23,7 +23,8 @@ h2 {
 
 .main {
     font-family: 'Besley', serif;
-    font-size: 10.5pt;
+    font-size: 11pt;
+    padding-bottom: 10px;
 }
 
 .main a {
@@ -110,7 +111,7 @@ li {
 .sidebar a {
     padding: 5px 25px;
     text-decoration: none;
-    font-size: 13pt;
+    font-size: 18pt;
     font-weight: 600;
     font-family: 'Instrument Sans', sans-serif;
     color: #ffffff;
@@ -136,13 +137,12 @@ li {
 #openSidebar {
     font-size: 20px;
     cursor: pointer;
-    background-color: transparent;
-    color: #cf2039;
-    padding: 10px 15px;
+    background-color: #f5f5f5;
+    color: #8f7042;
     border: none;
     position: fixed;
     top: 15px;
-    left: 15px;
+    right: 15px;
     z-index: 998;
     transition: 0.3s;
 }
