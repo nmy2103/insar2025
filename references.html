@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>INSAR 2025 | Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400..900;1,400..900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<script src="https://kit.fontawesome.com/b70d2090ca.js"
+        crossorigin="anonymous"></script>
+
+<!-- Navigation Sidebar-->
+<script>
+  function toggleSidebar() {
+    const sidebar = document.getElementById("sidebar");
+    const overlay = document.getElementById("overlay");
+    const isOpen = sidebar.style.width && sidebar.style.width !== "0px";
+
+    if (isOpen) {
+      sidebar.style.width = "0";
+      overlay.classList.remove("active");
+    } else {
+      const screenWidth = window.innerWidth;
+      sidebar.style.width = screenWidth <= 600 ? "100%" : "200px";
+      overlay.classList.add("active");
+    }
+  }
+</script>
+
+<body>
+  <div id="sidebar" class="sidebar">
+    <button class="closebtn" onclick="toggleSidebar()">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <a href="index.html">Home</a>
+    <a href="poster.pdf">Poster</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <button id="openSidebar" onclick="toggleSidebar()">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+  <div id="overlay" class="overlay" onclick="toggleSidebar()"></div>
+
+  <div class="main">
+    <div id="references">
+      <h2>References</h2>
+      <ol>
+        <li>
+          McNaughton, K. A., & Redcay, E. (2020). Interpersonal synchrony in
+          autism. <i>Current Psychiatry Reports, 22</i>(3), 1–11. doi: <a
+                href="https://doi.org/10.1007/s11920-020-1135-8"
+                target="_blank">10.1007/s11920-020-1135-8</a>
+        </li>
+        <li>
+          Bakeman, R., & Adamson, L. B. (1984). Coordinating attention to
+          people and objects in mother–infant and peer–infant interaction.
+          <i>Child Development, 55</i>(4), 1278–1289. doi: <a
+                href="https://doi.org/10.2307/1129997"
+                target="_blank">10.2307/1129997</a>
+        </li>
+        <li>
+          Cao, Z., Hidalgo, G., Simon, T., Wei, S. E., & Sheikh, Y. (2019).
+          OpenPose: Realtime multi-person 2D pose estimation using part
+          affinity fields. <i>IEEE Transactions on Pattern Analysis and
+          Machine Intelligence, 43</i>(1), 172–186. doi: <a
+                href="https://doi.org/10.1109/TPAMI.2019.2929257"
+                target="_blank">10.1109/TPAMI.2019.2929257</a>
+        </li>
+        <li>
+          Ranftl, R., Lasinger, K., Hafner, D., Schindler, K., & Koltun, V.
+          (2020). Towards robust monocular depth estimation: Mixing datasets
+          for zero-shot cross-dataset transfer. <i>IEEE Transactions on
+          Pattern Analysis and Machine Intelligence, 44</i>(3), 1623–1637.
+          doi: <a href="https://doi.org/10.1109/TPAMI.2020.3019967"
+                  target="_blank">10.1109/TPAMI.2020.3019967</a>
+        </li>
+      </ol>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>INSAR 2025 | Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400..900;1,400..900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<script src="https://kit.fontawesome.com/b70d2090ca.js"
+        crossorigin="anonymous"></script>
+
+<!-- Navigation Sidebar-->
+<script>
+  function toggleSidebar() {
+    const sidebar = document.getElementById("sidebar");
+    const overlay = document.getElementById("overlay");
+    const isOpen = sidebar.style.width && sidebar.style.width !== "0px";
+
+    if (isOpen) {
+      sidebar.style.width = "0";
+      overlay.classList.remove("active");
+    } else {
+      const screenWidth = window.innerWidth;
+      sidebar.style.width = screenWidth <= 600 ? "100%" : "200px";
+      overlay.classList.add("active");
+    }
+  }
+</script>
+
+<body>
+  <div id="sidebar" class="sidebar">
+    <button class="closebtn" onclick="toggleSidebar()">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <a href="index.html">Home</a>
+    <a href="poster.pdf">Poster</a>
+    <a href="index.html#references">References</a>
+  </div>
+  <button id="openSidebar" onclick="toggleSidebar()">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+  <div id="overlay" class="overlay" onclick="toggleSidebar()"></div>
+
+  <h2>Contact</h2>
+  <div class="main">
+    <p>
+      <b>Natasha Yamane</b> (corresponding author)<br>
+      <a href="mailto:yamane.n@northeastern.edu">yamane.n@northeastern.edu</a>
+    </p>
+    <p>
+      <b>Hannah Lansberry</b><br>
+      <a href="mailto:hannah.lansberry@midwestern.edu">hannah.lansberry@midwestern.edu</a>
+    </p>
+    <p>
+      <b>Matthew S. Goodwin</b><br>
+      <a href="mailto:m.goodwin@northeastern.edu">m.goodwin@northeastern.edu</a>
+    </p>
+  </div>
+
+</body>
+</html>

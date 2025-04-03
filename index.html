@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>INSAR 2025 | Parent-child cardiac synchrony and joint
+    engagement</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400..900;1,400..900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<script src="https://kit.fontawesome.com/b70d2090ca.js"
+        crossorigin="anonymous"></script>
+
+<!-- Navigation Sidebar-->
+<script>
+  function toggleSidebar() {
+    const sidebar = document.getElementById("sidebar");
+    const overlay = document.getElementById("overlay");
+    const isOpen = sidebar.style.width && sidebar.style.width !== "0px";
+
+    if (isOpen) {
+      sidebar.style.width = "0";
+      overlay.classList.remove("active");
+    } else {
+      const screenWidth = window.innerWidth;
+      sidebar.style.width = screenWidth <= 600 ? "100%" : "200px";
+      overlay.classList.add("active");
+    }
+  }
+</script>
+
+<body>
+<div id="sidebar" class="sidebar">
+  <button class="closebtn" onclick="toggleSidebar()">
+    <i class="fa-solid fa-xmark"></i>
+  </button>
+  <a href="#abstract-id">Abstract</a>
+  <a href="references.html">References</a>
+  <a href="poster.pdf">Poster</a>
+  <a href="contact.html">Contact</a>
+</div>
+<button id="openSidebar" onclick="toggleSidebar()">
+  <i class="fa-solid fa-bars"></i>
+</button>
+<div id="overlay" class="overlay" onclick="toggleSidebar()"></div>
+
+  <h1>An Exploratory Study of Cardiac Synchrony and Joint Engagement in
+    Parent-Child Dyads of Autistic and Neurotypical Children</h1>
+
+  <div class="main">
+
+    <div id="authors">
+    Natasha Yamane<sup>1</sup>, Hannah Lansberry<sup>2</sup>, and Matthew S.
+    Goodwin<sup>1</sup>
+    </div>
+
+    <div id="affiliations">
+      <sup>1 </sup>Northeastern University, Boston, MA
+      <br>
+      <sup>2 </sup>Chicago College of Osteopathic Medicine, Downers Grove, IL
+    </div>
+
+    <div id="abstract-id">INSAR 2025 Abstract ID#: 50136</div>
+
+    <div id="abstract-text">
+      <h4>Background</h4>
+      Research on dyadic physiological synchrony in children with autism
+      spectrum disorder (ASD) compared to neurotypical children has yielded
+      mixed results, generally indicating reduced or atypical synchrony in
+      ASD. Understanding these patterns has important implications for
+      identifying biomarkers and developing social  interventions. Further
+      research can clarify how physiological processes contribute to
+      synchrony and how synchrony patterns vary across contexts.
+
+      <h4>Objectives</h4>
+      We aimed to understand the role of heart rate variability (HRV) in the
+      physiological mechanisms underlying parent-child joint engagement (JE)
+      by:
+      <ol>
+        <li>Assessing whether parent-child dyads with and without ASD differ
+          in HRV trend and concurrent synchrony.</li>
+        <li>Investigating whether HRV trend and concurrent synchrony predict
+          JE events during play.</li>
+      </ol>
+
+      <h4>Methods</h4>
+      We obtained behavioral and cardiac data from video and ambulatory
+      electrocardio-graph (ECG) recordings of 11 parent-child dyads with
+      (<i>n</i> = 5; <i>M </i>| <i>SD</i>: 4.1 | 1.2 years) and without ASD
+      (<i>n</i> = 6; 3.3 | 1.0 years) engaged in a 15-minute dyadic play task
+      in the enTRAIN study. The enTRAIN study was conducted to assess
+      interpersonal physiological dynamics through semi-structured
+      socioemotional regulation tasks and parent-report questionnaires. Each
+      dyad received the same set of toys and was instructed to play together
+      as they would at home, while  parent and child ECGs were recorded
+      simultaneously with the well-validated chest-worn Actiwave Cardio by
+      CamNtech. ECG data were pre-processed into interbeat intervals used to
+      extract HRV root mean square of successive differences (RMSSD). We
+      then quantified HRV trend and concurrent synchrony as low- (LF) and
+      high-frequency (HF) wavelet coherence of parent and child RMSSD,
+      respectively. Dyadic proximity was calculated from video using
+      three-dimensional pose estimation with popular deep learning models.
+      Supported and Coordinated JE events were independently annotated in
+      Datavyu by blinded, reliable raters according to Bakeman and
+      Adamson’s (1984) <i>State-Based Joint Engagement</i> scheme. To assess
+      differences in trend/LF and concurrent/HF HRV synchrony between dyads
+      with and without ASD, we used linear mixed-effects models (LMMs),
+      accounting for repeated HRV synchrony measures within each dyad. To
+      examine whether parent-child HRV synchrony predicts JE outcomes, we
+      used Bayesian mixed-effects multinomial logistic regression models
+      (MEMLR; Eq.1) with four Markov chains and 2000 iterations, using
+      normal priors for fixed effects and Cauchy priors for random effect
+      standard deviations.
+
+      <h4>Results</h4>
+      Our LMMs revealed no effect of ASD diagnostic status on either HRV trend
+      (β = .01, <br><i>p</i> = .78) or concurrent (β = .02, <i>p</i> = .24)
+      synchrony. Similarly, our MEMLR models showed no effect of ASD
+      diagnostic status on Supported or Coordinated JE outcomes. However,
+      greater HRV trend synchrony was associated with a reduced likelihood
+      of Supported JE (OR = .60) and an increased likelihood of Coordinated
+      JE (OR = 5.04). Greater concurrent HRV coherence was also associated
+      with a reduced likelihood of Supported JE (OR = .47), but not linked to
+      Coordinated JE. Across all models, reduced dyadic proximity was
+      associated with increased likelihoods of both Supported and
+      Coordinated JE.
+
+      <h4>Conclusions</h4>
+      Autistic and neurotypical toddlers do not differ in cardiac synchrony
+      with their parents, likely due to our small sample size and limited
+      statistical power. Across groups, closer physical proximity and HRV
+      synchrony are associated with JE, highlighting the potential clinical
+      significance of HRV synchrony as a dyadic physiological marker of
+      relational attunement.
+    </div>
+  </div>
+
+</body>
+</html>
