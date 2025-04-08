@@ -37,6 +37,13 @@ h2 {
     text-decoration: underline;
 }
 
+.note {
+    margin: 8px 0px 10px 0px;
+    font-style: italic;
+    font-size: 9.5pt;
+    line-height: 1.2em;
+}
+
 sup {
     font-size: 8pt;
 }
